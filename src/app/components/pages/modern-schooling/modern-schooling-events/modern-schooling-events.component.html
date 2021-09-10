@@ -1,0 +1,25 @@
+<div class="events-area bg-fffaf3 pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Events</span>
+            <h2>Our Upcoming Events</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 col-md-6" *ngFor="let item of events">
+                <div class="single-events-box">
+                    <div class="image">
+                        <a [routerLink]="['/event/' + item.url]" class="d-block">
+                            <img src="{{ApiUrl}}/{{item.image}}" alt="image">
+                        </a>
+                        <span class="date">{{item.event_date}}</span>
+                    </div>
+                    <div class="content">
+                        <h3><a [routerLink]="['/event/' + item.url]">{{item.name}}</a></h3>
+                        <span class="location"><i class="bx bx-map"></i>{{item.event_location}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

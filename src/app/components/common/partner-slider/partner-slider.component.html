@@ -1,0 +1,9 @@
+<div class="partner-slides">
+    <owl-carousel-o [options]="partnerSlides">
+        <ng-template carouselSlide  *ngFor="let partner of partner">
+            <div class="partner-item">
+                <img src="{{ApiUrl}}/{{partner.image}}" alt="image">
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>

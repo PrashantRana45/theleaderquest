@@ -1,0 +1,41 @@
+<div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <a class="navbar-brand" routerLink="/"><img src="assets/img/tlqlogo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" ng-app="app" ng-controller="testCtrl">
+                <form class="search-box" #searchForm="ngForm" (ngSubmit)="submit(searchForm.value)" style="position: relative;">
+                    <input type="search" class="input-search" required ngModel #searchText="ngModel" name="searchText" id="searchText" placeholder="Search for anything" autocomplete="Off">
+                    <button type="submit"><i class="flaticon-search"></i></button>
+                    <ul *ngFor="let searchText of filterTerm">
+                        <li style="width: 100%; border: 1px solid #eee; padding: 10px;z-index: 9999;background: #ffff; font-weight: 900;">Courses</li>
+                        <li (click)="clickToNav(searchText)" style="width: 100%;  padding: 10px;position: absolute;z-index: 9999;background: #ffff;">{{searchText.name}}</li>
+                    </ul>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a routerLink="/about" class="nav-link">About Us </a></li>
+                    <li class="nav-item"><a routerLink="/courses" class="nav-link">Courses </a></li>
+                    <li class="nav-item"><a routerLink="/free-courses" class="nav-link">Free Courses </a></li>
+                    <li class="nav-item"><a routerLink="/events" class="nav-link">Events </a></li>
+                    <li class="nav-item"><a routerLink="/blog" class="nav-link">Blog </a></li>
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact Us </a></li>
+                </ul>
+                <ul class="navbar-nav for-responsive">
+                    <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a routerLink="/about" class="nav-link">About Us </a></li>
+                    <li class="nav-item"><a routerLink="/courses" class="nav-link">Courses </a></li>
+                    <li class="nav-item"><a routerLink="/events" class="nav-link">Events </a></li>
+                    <li class="nav-item"><a routerLink="/blog" class="nav-link">Blog </a></li>
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact Us </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

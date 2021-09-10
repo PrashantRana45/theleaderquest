@@ -1,0 +1,21 @@
+<div class="categories-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Categories</span>
+            <h2>Top Categories</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let item of categories">
+                <div class="single-categories-box">
+                    <img src="{{ApiUrl}}/{{item.image}}" alt="image">
+                    <div class="content">
+                        <h3>{{item.name}}</h3>
+                        <span>{{item.count}} Courses</span>
+                    </div>
+                    <a [routerLink]="['/course-category/' + item.url]" class="link-btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

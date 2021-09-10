@@ -1,0 +1,59 @@
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Compare</h2>
+            <ul>
+                <li>{{result.name}}</li>
+                <li>{{result1.name}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="shape9"><img src="assets/img/shape8.svg" alt="image"></div>
+</div>
+
+<div class="courses-details-area pb-100">
+    <div class="courses-details-image">
+        <img src="assets/img/compare.jpg" alt="image">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="courses-details-desc">
+                    <aside class="widget-area">
+                        <h3>{{result.name}}</h3>
+                        <span innerHTML="{{result.comparison}}"></span>
+                    </aside>
+                                
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="courses-details-desc">
+                    <aside class="widget-area">
+                        <h3>{{result1.name}}</h3>
+                        <span innerHTML="{{result1.comparison}}"></span>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .widget-area{
+        background: #fff;
+        box-shadow: 0px 10px 10px 10px #eee;
+        padding: 15px;
+    }
+    .widget-area h3{
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        padding: 15px;
+    }
+    .widget-area.widget-area .widget_insight ul {
+        padding-left: 15px !important;
+        list-style: circle  !important;
+    }
+    .widget-area .widget_insight ul li {
+        padding-left: 15px !important;
+        list-style: circle  !important;
+    }
+</style>

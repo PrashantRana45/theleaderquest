@@ -1,0 +1,25 @@
+<div class="feedback-area bg-fffaf3 ptb-100">
+    <div class="container">
+        <div class="feedback-slides-two">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide *ngFor="let item of result">
+                    <div class="single-feedback-box">
+                        <p>{{item.description}}</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="{{ApiUrl}}/{{item.image}}" class="rounded-circle" alt="image">
+                            <div class="title">
+                                <h3>{{item.name}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="divider2"></div>
+    <!-- <div class="divider3"></div>
+    <div class="shape2"><img src="assets/img/shape2.png" alt="image"></div> 
+    <div class="shape3"><img src="assets/img/shape3.png" alt="image"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="image"></div>
+    <div class="shape9"><img src="assets/img/shape8.svg" alt="image"></div>-->
+</div>
