@@ -16,19 +16,9 @@
         <div class="odemy-grid-sorting row align-items-center">
             <div class="col-lg-4 col-md-6 ordering">
                 <div class="select-box">
-                    <label>Universities:</label>
-                    <select (change)="onSelect($event.target.value)">
-                        <option value="">All Universities</option>
-                        <option value="BERKLEY UNIVERSITY">BERKLEY UNIVERSITY</option>
-                        <option value="Rice UNIVERSITY">Rice UNIVERSITY</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ordering">
-                <div class="select-box">
-                    <label>Duration:</label>
+                    <label>Categories:</label>
                     <select (change)="onChange($event.target.value)">
-                        <option value="">All Durations</option>
+                        <option value="">All Categories</option>
                         <option value="1 Months">1 Months</option>
                         <option value="2 Months">2 Months</option>
                         <option value="3 Months">3 Months</option>
@@ -41,6 +31,16 @@
                         <option value="10 Months">10 Months</option>
                         <option value="11 Months">11 Months</option>
                         <option value="12 Months">12 Months</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ordering">
+                <div class="select-box">
+                    <label>Universities:</label>
+                    <select (change)="onSelect($event.target.value)">
+                        <option value="">All Universities</option>
+                        <option value="BERKLEY UNIVERSITY">BERKLEY UNIVERSITY</option>
+                        <option value="Rice UNIVERSITY">Rice UNIVERSITY</option>
                     </select>
                 </div>
             </div>
