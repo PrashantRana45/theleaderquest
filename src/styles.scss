@@ -6,7 +6,9 @@ Default CSS
 :root {
     --fontFamily: 'Nunito', sans-serif;
     --fontFamily2: 'Playfair Display', serif;
+    --fontFamily3: 'Montserrat', sans-serif;
     --mainColor: #fe4a55;
+    --mainColor2: #004785;
     --secondaryColor: #6ba292;
     --optionalColor: #606060;
     --whiteColor: #ffffff;
@@ -19,7 +21,7 @@ body {
     margin: 0;
     font: {
         size: var(--fontSize);
-        family: var(--fontFamily);
+        family: var(--fontFamily3);
     };
 }
 img {
@@ -41,7 +43,7 @@ p {
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     color: var(--blackColor);
-    font-family: var(--fontFamily);
+    font-family: var(--fontFamily3);
 }
 .container {
     max-width: 1230px;
@@ -161,9 +163,11 @@ a {
         bottom: 55px;
     };
     .sub-title {
-        display: block;
+        display: inline-block;
         text-transform: uppercase;
-        color: var(--mainColor);
+        border: 1px solid #004785;
+        padding: 2px 5px;
+        color: var(--mainColor2);
         margin-bottom: 10px;
         font: {
             size: 14px;
@@ -172,6 +176,8 @@ a {
     }
     h2 {
         max-width: 615px;
+        padding-bottom: 15px;
+        position:relative;
         margin: {
             bottom: 0;
             left: auto;
@@ -6010,4 +6016,62 @@ Responsive CSS
         }
     }
     
+}
+.navbar-area.sticky-box-shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important;
+}
+.hero-banner-area {
+    background: url(assets/img/degree.jpg)no-repeat 0 0;
+    background-size: cover;
+    padding-bottom:0 !important;
+    
+}
+.hero-banner-content {
+	padding: 120px 0 120px;
+	margin: 0 auto;
+	max-width: 690px;
+}
+.hero-banner-content h1 {
+    color:#fff;
+    text-align: center;
+}
+.hero-banner-content p {
+    color:#fff;
+    text-align: center;
+    padding:0;
+}
+.hero-banner-content .default-btn {
+    margin: 10px auto 0;
+    width: 200px;
+    display:block;
+    background-color: #004785;
+}
+.partner-slides .owl-carousel .owl-item {
+    border: 1px solid #dedede;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px -2px #c3c6c7;
+}
+.partner-area {
+    border-top: 3px solid #004785;
+}
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 150px);
+}
+.section-title h2::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 3px;
+	background: #004785;
+	bottom: 0;
+	left: calc(50% - 20px);
 }
