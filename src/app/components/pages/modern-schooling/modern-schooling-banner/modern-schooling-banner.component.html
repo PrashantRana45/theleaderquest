@@ -1,18 +1,18 @@
 <div class="hero-banner-area" *ngFor="let ban of heroarea">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-12 col-md-12">
                 <div class="hero-banner-content">
                     <h1>{{ban.name}}</h1>
                     <p>{{ban.description}}</p>
                     <a [routerLink]="[ban.url]" class="default-btn"><i class="flaticon-user"></i>Know more<span></span></a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
+            <!--<div class="col-lg-6 col-md-12">
                 <div class="hero-banner-image">
                     <img src="{{ApiUrl}}/{{ban.image}}" alt="image">
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     <div class="banner-shape19"><img src="assets/img/banner-shape20.png" alt="image"></div>
