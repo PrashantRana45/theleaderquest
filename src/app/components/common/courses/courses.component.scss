@@ -146,7 +146,7 @@
 .single-courses-item {
     margin-bottom: 30px;
     position: relative;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: var(--whiteColor);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .02);
 
@@ -217,8 +217,9 @@
         }
         .price {
             display: block;
-            color: var(--mainColor);
+            color: var(--mainColor2);
             margin-bottom: 3px;
+            border-bottom: 1px solid #d6d6d6;
             font: {
                 size: 28px;
                 weight: 800;
@@ -283,13 +284,17 @@
     &.without-box-shadow {
         box-shadow: unset;
         transition: var(--transition);
+        background-color: #f4f4f4;
+        padding: 20px;
+        border: 2px dotted #adadae;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 
         .courses-image {
             img {
-                border-radius: 50%;
+                border-radius: 0;
             }
             &::before {
-                border-radius: 50%;
+                border-radius: 0%;
             }
         }
         &:hover {
