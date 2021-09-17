@@ -206,7 +206,7 @@ a {
     overflow: hidden;
     z-index: 1;
     color: var(--whiteColor);
-    background-color: var(--mainColor);
+    background-color: var(--mainColor2);
     transition: var(--transition);
     border-radius: 5px;
     font: {
@@ -2778,6 +2778,7 @@ blockquote, .blockquote {
 .feedback-area {
     position: relative;
     z-index: 1;
+    border-top: 3px solid #004785;
     
     .shape2 {
         bottom: 2%;
@@ -2817,6 +2818,7 @@ blockquote, .blockquote {
 .courses-area {
     position: relative;
     z-index: 1;
+    border-top: 3px solid #004785;
 }
 .odemy-grid-sorting {
     margin-bottom: 40px;
@@ -3276,6 +3278,7 @@ blockquote, .blockquote {
 .bg-fffaf3 {
     .funfacts-area {
         background-color: #fffaf3;
+        border-top:3px solid #004785;
     }
 }
 .premium-access-area {
@@ -6074,4 +6077,8 @@ Responsive CSS
 	background: #004785;
 	bottom: 0;
 	left: calc(50% - 20px);
+}
+.about-image img {
+    border-radius: 8px;
+    box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
