@@ -6031,8 +6031,12 @@ Responsive CSS
 }
 .hero-banner-content {
 	padding: 120px 0 120px;
-	margin: 0 auto;
+	margin: 0;
 	max-width: 690px;
+}
+.txt-bg {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
 }
 .hero-banner-content h1 {
     color:#fff;
