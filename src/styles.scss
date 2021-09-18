@@ -1834,7 +1834,7 @@ textarea.form-control {
         color: var(--optionalColor);
         text-align: center;
         display: inline-block;
-        border-radius: 3px;
+        border-radius: 50%;
         line-height: 34px;
         position: relative;
         margin: {
@@ -1847,7 +1847,7 @@ textarea.form-control {
         };
         &:hover, &.current {
             color: var(--whiteColor);
-            background-color: var(--mainColor);
+            background-color: var(--mainColor2);
         }
         i {
             position: relative;
@@ -6024,7 +6024,7 @@ Responsive CSS
     box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23) !important;
 }
 .hero-banner-area {
-    background: url(assets/img/degree.jpg)no-repeat 0 0;
+    background: url(assets/img/university.jpg)no-repeat 0 0;
     background-size: cover;
     padding-bottom:0 !important;
     
@@ -6085,4 +6085,32 @@ Responsive CSS
 .about-image img {
     border-radius: 8px;
     box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.cat-page {
+    background: url(assets/img/category-header.jpg) no-repeat right 0;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding:0;
+    min-height: 150px;
+}
+.cat-page .page-title-content h2 {
+    margin-top: 0;
+    color:#fff;
+}
+.breadcrumb-div {
+    background: #e1e1e1;
+    padding: 5px 0;
+}
+.breadcrumb-div .page-title-content ul {
+    text-align: left;
+}
+.breadcrumb-div .page-title-content ul li {
+    color: #221638;
+    font-size: 14px;
+    font-weight: 500;
+}
+.breadcrumb-div .page-title-content ul li a {
+    color: #221638;
+    font-weight: 500;
 }
