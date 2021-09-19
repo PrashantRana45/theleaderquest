@@ -1395,12 +1395,12 @@
 .page-title-content ul {
     padding-left: 0;
     margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     max-width: 800px;
-    margin-top: 15px;
+    margin-top: 0;
 }
 select {
     display: inline-block;
