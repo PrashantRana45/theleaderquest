@@ -7,7 +7,8 @@ Default CSS
     --fontFamily: 'Nunito', sans-serif;
     --fontFamily2: 'Playfair Display', serif;
     --fontFamily3: 'Montserrat', sans-serif;
-    --mainColor: #fe4a55;
+    /*--mainColor: #fe4a55;*/
+    --mainColor: #004785;
     --mainColor2: #004785;
     --secondaryColor: #6ba292;
     --optionalColor: #606060;
@@ -6094,9 +6095,34 @@ Responsive CSS
     padding:0;
     min-height: 150px;
 }
-.cat-page .page-title-content h2 {
+.cont-page {
+    background: url(assets/img/contact-header.jpg) no-repeat right 0;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding: 0;
+    min-height: 300px;
+}
+.course-det {
+    background: url(assets/img/category-header.jpg) no-repeat right 0;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding:0;
+    min-height: 80px;   
+}
+.cat-page .page-title-content h2,
+.cont-page .page-title-content h2 {
     margin-top: 0;
     color:#fff;
+    text-shadow: 0 0 10px #000;
+}
+.course-det .page-title-content h2 {
+    margin-top: 0;
+    color:#fff;
+    text-shadow: 0 0 10px #000;
+    padding: 15px 0;
+    font-size: 32px;
 }
 .breadcrumb-div {
     background: #e1e1e1;
