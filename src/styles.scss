@@ -2620,6 +2620,8 @@ textarea.form-control {
             margin-bottom: 15px;
             background-color: var(--whiteColor);
             box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
+            border: 1px solid #bababa;
+            border-radius: 8px;
             
             &:last-child {
                 margin-bottom: 0;
@@ -6111,8 +6113,17 @@ Responsive CSS
     padding:0;
     min-height: 80px;   
 }
+.course-header {
+    background: url(assets/img/course-header.jpg) no-repeat left 0;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding:0;
+    min-height: 150px;  
+}
 .cat-page .page-title-content h2,
-.cont-page .page-title-content h2 {
+.cont-page .page-title-content h2,
+.course-header .page-title-content h2 {
     margin-top: 0;
     color:#fff;
     text-shadow: 0 0 10px #000;
@@ -6139,4 +6150,7 @@ Responsive CSS
 .breadcrumb-div .page-title-content ul li a {
     color: #221638;
     font-weight: 500;
+}
+.courses-content p {
+    padding: 0 20px;
 }
