@@ -111,6 +111,9 @@ p {
 .bg-eee8df {
     background-color: #eee8df;
 }
+.bg-ddd {
+    background-color: #ddd;
+}
 .ptb-100 {
     padding: {
         top: 100px;
@@ -2704,6 +2707,7 @@ textarea.form-control {
 .subscribe-area {
     position: relative;
     z-index: 1;
+    border-top: 3px solid #004785;
 
     .shape4 {
         right: auto;
@@ -2779,8 +2783,7 @@ blockquote, .blockquote {
     }
 }
 .feedback-area {
-    position: relative;
-    z-index: 1;
+    position: relative;    
     border-top: 3px solid #004785;
     
     .shape2 {
@@ -6153,4 +6156,8 @@ Responsive CSS
 }
 .courses-content p {
     padding: 0 20px;
+}
+.blog-area,
+.events-area {
+    display: none;
 }
